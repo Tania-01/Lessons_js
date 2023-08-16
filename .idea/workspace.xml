@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07ad5ed7-395d-4e18-81ac-ccf84d2cb555" name="Changes" comment="j">
+    <list default="true" id="07ad5ed7-395d-4e18-81ac-ccf84d2cb555" name="Changes" comment="add first HomeWork">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lesons_1/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/Lesons_1/main.js" afterDir="false" />
     </list>
@@ -51,7 +51,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1692191940794</updated>
-      <workItem from="1692191941782" duration="2347000" />
+      <workItem from="1692191941782" duration="3532000" />
     </task>
     <task id="LOCAL-00001" summary="j">
       <option name="closed" value="true" />
@@ -69,7 +69,15 @@
       <option name="project" value="LOCAL" />
       <updated>1692192092505</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add first HomeWork">
+      <option name="closed" value="true" />
+      <created>1692194397692</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1692194397692</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -88,6 +96,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="j" />
-    <option name="LAST_COMMIT_MESSAGE" value="j" />
+    <MESSAGE value="add first HomeWork" />
+    <option name="LAST_COMMIT_MESSAGE" value="add first HomeWork" />
   </component>
 </project>
