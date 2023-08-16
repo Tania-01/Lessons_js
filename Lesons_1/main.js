@@ -34,3 +34,5 @@ let lastname=prompt('enter lastName')
 let age=parseInt(prompt('enter your years'))
 console.log('Hi'+' '+firstname+' '+middlename+' '+lastname+' '+ age)
 console.log(typeof(age))
+
+
