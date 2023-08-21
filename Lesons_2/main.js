@@ -4,16 +4,16 @@ let arr=['apple','cherry','qwerty','one','two','day']
 console.log(arr)
 // - Створити 3 об'єкти які описують книги. Поля об'єкту : title ,pageCount, genre.
 
-let firstBook=[
-    pageCount=[120],
-    title=['Harry Potter'],
-    genre=['adventure']
-]
-let secondBook=[
-        pageCount=[120],
-        title=['war and peace'],
-        genre=['adventure']
-]
+let firstBook= {
+    pageCount : 120,
+    title :'Harry Potter',
+    genre :'adventure'
+}
+let secondBook= {
+    pageCount :120,
+    title: 'war and peace',
+    genre :'adventure'
+}
   let  thirdBook=[
         pageCount=[120],
         title=[''],
@@ -120,18 +120,12 @@ console.log(r)
 let time=prompt('enter time')
 if(time<15){
     console.log("1")
-}else{
-    if(time >=15 && time<=30){
+}else if(time >=15 && time<=30){
         console.log("2")
-    }else {
-        if(time>30 && time<=45 ){
+    }else if(time>30 && time<=45 ){
             console.log('3')
-        }else {
-            if(time>45 && time<=59){
+        }else if(time>45 && time<=59){
                 console.log('4')
-            }
-        }
-    }
 }
 
 // - У змінній day дано якесь число від 1 до 31. Потрібно визначити, у яку половину(декаду) місяця потрапляє це число (у першу, другу чи третю).
@@ -140,16 +134,12 @@ let day=prompt('enter the number of day')
 
 if(day>0&&day<=10){
     console.log("I")
-}else{
-    if(day>11 && day<=21){
+}else if(day>11 && day<=21){
         console.log('II')
-    }else{
-        if(day>=22 && day<=31){
+    }else if(day>=22 && day<=31){
             console.log('III')
         }else{
-            console.log('undefind')
-        }
-    }
+    console.log('undefind')
 }
 // - Скласти розклад на тиждень за домопоги switch. Користувач вводить порядковий номер дня тижня і на екрані відображається інфа що заплановано на цей день (можна замість плану на день, назву дня англійською).
 
@@ -190,23 +180,38 @@ let b=prompt("enter second number")
 
  if(d > b){
      console.log(d)
- }else {
-     if(d<b){
+ }else if(d<b){
          console.log(b)
      }else {
-
          console.log('Числа рівні')
      }
- }
+
 
 
 //     - є змінна х, яка може прийняти будь-яке значення (стрінг, число, undefined, null  і тд включно). Напишіть код який,
 //         за допомоги  оператора || буде присвоювати змінній х значення "default"  якщо значення змінної х являється falsy (хибноподібні, тобто приводиться до false)
 //
-// let m = prompt("введіть число ");
-// m = m || "default";
-// console.log(m)
-//
+let m = false;
+m = m || "default";
+console.log(m)
+
+// 2 варіант
+
+let value =" ";
+
+if (value === 0) {
+    console.log("Значення є 'falsy' через 0");
+} else if (value === ' ') {
+    console.log("Значення є 'falsy' через пусту стрічку");
+}else if (isNaN(value)) {
+    console.log("Значення є 'falsy' через NaN");
+}else if (value === null) {
+    console.log("Значення є 'falsy' через null");
+}else if (value === undefined) {
+    console.log("Значення є 'falsy' через undefined");
+}else if (value === false) {
+    console.log("Значення є 'falsy' через false");
+}
 //     - з файлу arrays.js (лежить в папці 2023 plan ) взяти масив coursesAndDurationArray. За допомоги іф перевірити кожен його елемент на тривалість навчання. У випадку якщо тривалість довша за 5 місяців вивести в консоль "Супер".
 
 let coursesAndDurationArray = [
