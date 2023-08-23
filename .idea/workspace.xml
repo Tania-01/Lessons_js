@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07ad5ed7-395d-4e18-81ac-ccf84d2cb555" name="Changes" comment="add edits to 2 homework">
+    <list default="true" id="07ad5ed7-395d-4e18-81ac-ccf84d2cb555" name="Changes" comment="add  3 homework with loops">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lessons3/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/Lessons3/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +56,7 @@
       <updated>1692191940794</updated>
       <workItem from="1692191941782" duration="4267000" />
       <workItem from="1692197665364" duration="1719000" />
-      <workItem from="1692372799514" duration="19059000" />
+      <workItem from="1692372799514" duration="19931000" />
     </task>
     <task id="LOCAL-00001" summary="j">
       <option name="closed" value="true" />
@@ -113,7 +114,23 @@
       <option name="project" value="LOCAL" />
       <updated>1692632554028</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="add  3 homework with loops">
+      <option name="closed" value="true" />
+      <created>1692797683759</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1692797683760</updated>
+    </task>
+    <task id="LOCAL-00009" summary="add  3 homework with loops">
+      <option name="closed" value="true" />
+      <created>1692797721250</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1692797721250</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -136,6 +153,7 @@
     <MESSAGE value="add variable of age with number type" />
     <MESSAGE value="add done of second homework" />
     <MESSAGE value="add edits to 2 homework" />
-    <option name="LAST_COMMIT_MESSAGE" value="add edits to 2 homework" />
+    <MESSAGE value="add  3 homework with loops" />
+    <option name="LAST_COMMIT_MESSAGE" value="add  3 homework with loops" />
   </component>
 </project>
