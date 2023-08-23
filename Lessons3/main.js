@@ -151,11 +151,15 @@ for (let i = 0; i < users.length; i++) {
     const user = users[i];
     if(user.status = true){
         document.write(`<div>${user.name}</div>`)
-    }
+    }}
+for (let i = 0; i < users.length; i++) {
+    const user = users[i];
     if(user.status=true){
 
         document.write(`<div>${user.name}  ${user.status}</div>`)
-    }
+    }}
+for (let i = 0; i < users.length; i++) {
+    const user = users[i];
     if(user.age>30){
         document.write(`<div>${user.name+""+ user.age}}</div>`)
     }
