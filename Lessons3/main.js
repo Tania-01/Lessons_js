@@ -153,6 +153,7 @@ for (let i = 0; i < users.length; i++) {
         document.write(`<div>${user.name}</div>`)
     }
     if(user.status=true){
+
         document.write(`<div>${user.name}  ${user.status}</div>`)
     }
     if(user.age>30){
