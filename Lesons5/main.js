@@ -128,12 +128,10 @@ let exchange=(sumUAH, currencyValues, exchangeCurrency)=> {
     for (let i = 0; i < currencyValues.length; i++) {
         if (currencyValues[i].currency === exchangeCurrency) {
             exchangeRate = currencyValues[i].value;
-            break;
+            const exchangedAmount = sumUAH / exchangeRate;
+            return exchangedAmount;
         }
     }
-
-    const exchangedAmount = sumUAH / exchangeRate;
-    return exchangedAmount;
 }
 
 // Приклад використання функції
