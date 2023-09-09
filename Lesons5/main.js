@@ -1,23 +1,22 @@
 // ВСЕ ЗРОБИТИ СТРІЛОЧНИМИ ФУНКЦІЯМИ!
 //     - створити функцію яка обчислює та повертає площу прямокутника зі сторонами а і б
 let conc=(a,b)=>{
-    let s=2*(a*b)
-    return s
+    console.log(2*(a*b))
 }
-console.log(conc(12,19))
+conc(12,19)
 // - створити функцію яка обчислює та повертає площу кола з радіусом r
 p=3.14
 let circule=(a)=>{
-   let result=2*(p*a)
-    return result
+    console.log(2*(p*a))
+
 }
-console.log(circule(23))
+circule(23)
 // - створити функцію яка обчислює та повертає площу циліндру висотою h, та радіутом r
 let cilinder=(h,r)=>{
-    let result=2*p*r*(h+r)
-    return result
+ console.log(2*p*r*(h+r))
+
 }
-console.log(cilinder(23,5))
+cilinder(23,5)
 // - створити функцію яка приймає масив та виводить кожен його елемент
 let printArrayElements=(array)=>{
     for (let i = 0; i < array.length; i++) {
@@ -28,12 +27,12 @@ const myArray = [1, 2, 3, 4, 5];
 printArrayElements(myArray);
 // - створити функцію яка створює параграф з текстом. Текст задати через аргумент
 let createParagraph=(text)=>{
-    return document.write(`<p>${text}</p>`)
+   document.write(`<p>${text}</p>`)
 }
 createParagraph('hi people')
 // - створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий
 let listUL=(list)=>{
-    return document.write(`<ul><li>${list}</li><li>${list}</li><li>${list}</li></ul>`)
+   document.write(`<ul><li>${list}</li><li>${list}</li><li>${list}</li></ul>`)
 }
 listUL('helo')
 // - створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий. Кількість li визначається другим аргументом, який є числовим (тут використовувати цикл)
