@@ -65,7 +65,7 @@
       <updated>1692191940794</updated>
       <workItem from="1692191941782" duration="4267000" />
       <workItem from="1692197665364" duration="1719000" />
-      <workItem from="1692372799514" duration="51283000" />
+      <workItem from="1692372799514" duration="53210000" />
     </task>
     <task id="LOCAL-00001" summary="j">
       <option name="closed" value="true" />
@@ -219,7 +219,15 @@
       <option name="project" value="LOCAL" />
       <updated>1694622527160</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="add 9 homework with dom">
+      <option name="closed" value="true" />
+      <created>1694623847861</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1694623847861</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -249,17 +257,5 @@
     <MESSAGE value="add 6-8 homeworks" />
     <MESSAGE value="add 9 homework with dom" />
     <option name="LAST_COMMIT_MESSAGE" value="add 9 homework with dom" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/Lessons9/index.html</url>
-          <line>159</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
