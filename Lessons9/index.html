@@ -234,10 +234,11 @@
     let hours=document.createElement('p')
     hours.innerHTML=`${course.hourDuration}`
 let modulse=document.createElement('div')
-    for (let i = 0; i < modulse.length; i++) {
-      let name =document.createElement('p')
-      name.innerHTML=`${modulse[i]}`
-      modulse.appendChild(name)
+    for (model of coursesArray.mod ) {
+            let p =document.createElement('p')
+      p.innerHTML=`${[i]}`
+      modulse.appendChild(p)
+      i++
     }
 
     div.append(title,duration,hours,modulse)
