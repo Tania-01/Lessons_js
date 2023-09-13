@@ -225,23 +225,37 @@
       modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'react', 'angular', 'aws', 'docker', 'git', 'sass']
     }
   ];
-  let div=document.getElementById('courses')
+  let div2=document.createElement('div')
+
   for (let course of coursesArray) {
     let title=document.createElement('h1')
+    title.className=('title_course')
+    title.style.border='1px solid blue'
     title.innerHTML=`${course.title}`
     let duration=document.createElement('p')
+    duration.className=('title_course')
     duration.innerHTML=`${course.monthDuration}`
+    duration.style.border='1px solid blue'
     let hours=document.createElement('p')
     hours.innerHTML=`${course.hourDuration}`
-let modulse=document.createElement('div')
-    for (model of coursesArray.mod ) {
-            let p =document.createElement('p')
-      p.innerHTML=`${[i]}`
-      modulse.appendChild(p)
-      i++
+    hours.style.border='1px solid blue'
+    const moduleList = document.createElement('ul');
+    let div=document.createElement('div')
+    div.className=('clas')
+div.append(title,duration,hours)
+    for (module of course.modules ) {
+      const moduleListItem = document.createElement('li');
+      moduleListItem.textContent = module;
+      moduleList.appendChild(moduleListItem);
+      moduleList.style.border=('1px solid blue')
+      moduleList.style.margin=('10px')
+      moduleListItem.style.border=('1px solid blue')
     }
+    div.append(moduleList)
+    div.style.border=('1px solid red')
 
-    div.append(title,duration,hours,modulse)
+
     document.body.appendChild(div)
      }
+
 </script>

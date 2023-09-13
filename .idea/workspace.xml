@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07ad5ed7-395d-4e18-81ac-ccf84d2cb555" name="Changes" comment="add 9 homework with dom">
+    <list default="true" id="07ad5ed7-395d-4e18-81ac-ccf84d2cb555" name="Changes" comment="add 9 homework with dom&#10;add update to homework">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lessons9/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Lessons9/index.html" afterDir="false" />
     </list>
@@ -65,7 +65,7 @@
       <updated>1692191940794</updated>
       <workItem from="1692191941782" duration="4267000" />
       <workItem from="1692197665364" duration="1719000" />
-      <workItem from="1692372799514" duration="53210000" />
+      <workItem from="1692372799514" duration="55374000" />
     </task>
     <task id="LOCAL-00001" summary="j">
       <option name="closed" value="true" />
@@ -227,7 +227,15 @@
       <option name="project" value="LOCAL" />
       <updated>1694623847861</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="add 9 homework with dom&#10;add update to homework">
+      <option name="closed" value="true" />
+      <created>1694626866743</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1694626866743</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -256,6 +264,7 @@
     <MESSAGE value="add 5 homework with arrows function" />
     <MESSAGE value="add 6-8 homeworks" />
     <MESSAGE value="add 9 homework with dom" />
-    <option name="LAST_COMMIT_MESSAGE" value="add 9 homework with dom" />
+    <MESSAGE value="add 9 homework with dom&#10;add update to homework" />
+    <option name="LAST_COMMIT_MESSAGE" value="add 9 homework with dom&#10;add update to homework" />
   </component>
 </project>
