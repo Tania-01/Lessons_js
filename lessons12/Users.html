@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Users List</title>
+</head>
+<body>
+<h1>Users List</h1>
+<ul id="userList"></ul>
+
+<script>
+
+  function getUsers() {
+    fetch('http://jsonplaceholder.typicode.com/users')
+            .then(response => response.json())
+            .then(users => {
+              const userList = document.getElementById('userList');
+
+
+              users.forEach(user => {
+                const listItem = document.createElement('li');
+                const userLink = document.createElement('a');
+                userLink.textContent = `${user.id} - ${user.name}`;
+                userLink.href = `user-details.html?id=${user.id}`;
+
+                listItem.appendChild(userLink);
+                userList.appendChild(listItem);
+              });
+            })
+            .catch(error => console.error( error));
+  }
+
+
+  getUsers();
+</script>
+</body>
+</html>

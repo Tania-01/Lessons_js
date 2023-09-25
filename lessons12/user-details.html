@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Details</title>
+</head>
+<body>
+<h1>User Details</h1>
+<div id="userDetails"></div>
+
+<script>
+
+    const urlParams = new URLSearchParams(window.location.search);
+    const userId = urlParams.get('id');
+
+
+    function getUserDetails() {
+        fetch(`https://jsonplaceholder.typicode.com/users/${userId}`)
+            .then(response => response.json())
+            .then(user => {
+                const userDetails = document.getElementById('userDetails');
+                const userFields = Object.entries(user);
+
+
+                userFields.forEach(([key, value]) => {
+                    if (key === 'company' || key === 'address') {
+
+                        const subFields = Object.entries(value);
+                        const subFieldBlock = document.createElement('div');
+
+                        subFields.forEach(([subKey, subValue]) => {
+                            if (typeof subValue === 'object' && subValue !== null) {
+
+                                const subObjectFields = Object.entries(subValue);
+
+                                subObjectFields.forEach(([subObjectKey, subObjectValue]) => {
+                                    const subFieldElement = document.createElement('p');
+                                    subFieldElement.textContent = `${subObjectKey}: ${subObjectValue}`;
+                                    subFieldBlock.appendChild(subFieldElement);
+                                });
+                            } else {
+                                const fieldElement = document.createElement('p');
+                                fieldElement.textContent = `${subKey}: ${subValue}`;
+                                subFieldBlock.appendChild(fieldElement);
+                            }
+                        });
+
+                        userDetails.appendChild(subFieldBlock);
+                    } else if (Array.isArray(value)) {
+
+                        const list = document.createElement('ul');
+
+                        value.forEach(item => {
+                            const listItem = document.createElement('li');
+                            listItem.textContent = item;
+                            list.appendChild(listItem);
+                        });
+
+                        userDetails.appendChild(list);
+                    } else {
+                        const fieldElement = document.createElement('p');
+                        fieldElement.textContent = `${key}: ${value}`;
+                        userDetails.appendChild(fieldElement);
+                    }
+                });
+            })
+            .catch(error => console.error( error));
+    }
+
+
+    getUserDetails();
+</script>
+</body>
+</html>
