@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User List</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>User List</h1>
+<div id="userList" class="user-list"></div>
+
+<script>
+
+    fetch('https://jsonplaceholder.typicode.com/users')
+        .then(response => response.json())
+        .then(users => {
+            const userList = document.getElementById('userList');
+
+
+            users.forEach(user => {
+                const userBlock = document.createElement('div');
+                userBlock.classList.add('user-block');
+
+                const userId = user.id;
+                const userName = user.name;
+
+                const userInfo = document.createElement('p');
+                userInfo.textContent = `ID: ${userId}, Name: ${userName}`;
+
+                const userDetailsButton = document.createElement('a');
+                userDetailsButton.textContent = 'Details';
+                userDetailsButton.href = `user-details.html?id=${userId}`;
+
+                userBlock.appendChild(userInfo);
+                userBlock.appendChild(userDetailsButton);
+
+                userList.appendChild(userBlock);
+            });
+        })
+        .catch(error => console.error('Помилка при отриманні даних користувачів:', error));
+
+
+</script>
+</body>
+</html>

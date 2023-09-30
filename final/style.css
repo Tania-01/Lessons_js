@@ -1,0 +1,80 @@
+/* Стилі для index.html */
+
+/* Кожен блок користувача виводимо по 2 в рядок */
+.user-block {
+    display: inline-block;
+    width: 48%; /* 2% відступ для розділення блоків */
+    margin: 1%;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+}
+
+/* Стилі для кнопки/посилання під інформацією про користувача */
+.user-block a {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    text-decoration: none;
+    background-color: #007bff;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Стилі для user-details.html */
+
+/* Блок з інформацією про користувача */
+#userInfo {
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+/* Кнопка "Posts of Current User" */
+#postsButton {
+    display: block;
+    width: 90%;
+    margin: 20px auto;
+    text-align: center;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Блоки з короткою інформацією про пости - ряд по 5 */
+.post-block {
+    display: inline-block;
+    width: 19%; /* 1% відступ для розділення блоків */
+    margin: 1%;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+}
+
+/* Стилі для post-details.html */
+
+/* Блок з інформацією про пост */
+#postInfo {
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+/* Коментарі - ряд по 4 */
+.comment-block {
+    display: inline-block;
+    width: 23%; /* 1% відступ для розділення блоків */
+    margin: 1%;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+}
+
+/* Загальні стилі для всіх елементів, які характеризують users, posts, comments */
+p {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
